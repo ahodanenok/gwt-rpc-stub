@@ -1,0 +1,77 @@
+.root {
+    -fx-base: #e8e8e8;
+    -fx-mid-text-color: #252525;
+    -fx-accent: #3875d6;
+    -fx-font-size: 13px;
+    -fx-font-family: Helvetica;
+}
+
+.invalid {
+    -fx-background-color: red,linear-gradient(to bottom, derive(#fd4141,50%) 5%,derive(#fd4141,90%) 40%) !important;
+    -fx-background-insets: -0.2, 1, 2, -1.4, 2.6 !important;
+    -fx-background-radius: 3, 2, 1, 4, 1 !important;
+}
+
+.title-bar, .server-pane {
+    -fx-padding: 5px;
+}
+
+.title-bar .title-bar-title {
+    -fx-font-size: 18px;
+}
+
+.server-status-running,
+.server-status-starting {
+    -fx-text-fill: green;
+}
+
+.server-status-stopped,
+.server-status-stopping {
+    /*-fx-text-fill: black;*/
+}
+
+.server-status-error {
+    -fx-text-fill: red;
+}
+
+.label:disabled,
+.button:disabled,
+.toggle-button:disabled,
+.radio-button:disabled,
+.check-box:disabled,
+.hyperlink:disabled,
+.menu-button:disabled,
+.split-menu-button:disabled,
+.slider:disabled,
+.scroll-bar:disabled,
+.scroll-pane:disabled,
+.progress-bar:disabled,
+.progress-indicator:disabled,
+.text-input:disabled,
+.choice-box:disabled,
+.combo-box-base:disabled,
+.date-cell:disabled > *, /* This is set on children so border is not affected. */
+.list-view:disabled,
+.tree-view:disabled,
+.table-view:disabled,
+.tree-table-view:disabled,
+.tab-pane:disabled,
+.titled-pane:disabled > .title,
+.accordion:disabled > .titled-pane > .title,
+.tab-pane > .tab-header-area > .headers-region > .tab:disabled,
+.menu:disabled,
+.menu-item:disabled > .label,
+.menu-item:disabled,
+.list-cell:filled:selected:focused:disabled,
+.list-cell:filled:selected:disabled,
+.tree-cell:filled:selected:focused:disabled,
+.tree-cell:filled:selected:disabled,
+.tree-cell > .tree-disclosure-node:disabled,
+.tree-table-row-cell > .tree-disclosure-node:disabled,
+.table-row-cell:selected:disabled,
+.tree-table-row-cell:selected:disabled,
+.table-cell:selected:disabled,
+.tree-table-cell:selected:disabled,
+.spinner:disabled {
+    -fx-opacity: 0.6;
+}
